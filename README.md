@@ -1,2 +1,2 @@
 
-我的 React 練習紀錄，class component、State、 lifecycle、Hook等，大量吸收很多資訊但仍然還是需要繼續實作，加強熟練度
+React 練習，class component、State、 lifecycle、Hook等，吸收了很多資訊，持續實作，加強熟練度及強化自己的邏輯。
