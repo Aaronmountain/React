@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "data": [
+        {
+          "id": "1620231833105",
+          "note": "如何動態添加 className，也是利用 useState 設立初始值(即原本的 className)，之後useEffect綁定相依關係，並在useEffecct中判斷是否要添加 className (在List元件中，主要用來動態添加className，因為在判斷下方的區塊要顯示還隱藏)",
+          "date": "2021-05-06",
+          "time": "00:21"
+        },
+        {
+          "id": "1620231814305",
+          "note": "終於成功新增編輯功能，將原先放在Edit中的useState放到父層並以props下放。原先想透過兩個State去控制Edit中的input，但因為input已經被原先在Edit元件中的note這個State給控制，就沒辦法再讓Item透過父層傳過來的State控制。",
+          "date": "2021-05-05",
+          "time": "23:03"
+        }
+      ],
+      "id": "1"
+    }
+  ]
+}
