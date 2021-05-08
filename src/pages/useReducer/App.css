@@ -1,0 +1,114 @@
+:root {
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --fixed-width: 450px;
+}
+
+.container{
+  width: 45%;
+  margin: auto;
+  background-color: #222;
+}
+.btn{
+  display: inline-block;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-5);
+}
+.container .item:nth-child(1){
+  padding-top: 3rem;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--fixed-width);
+  margin: 2rem auto;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #fff;
+}
+.item button,
+.item a {
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-primary-5);
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+}
+.item h4 {
+  margin: 0;
+  color: #fff;
+}
+.item p {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.modal {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(243, 200, 200, 0.589);
+  display: inline-block;
+  padding: 0.25rem 1rem 1.2rem;
+  border-radius: var(--radius);
+  text-transform: capitalize;
+}
+.modal p {
+  margin-bottom: 0;
+  color: var(--clr-red-dark);
+}
+
+.form {
+  background: rgb(156, 156, 156);
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  margin-top: 8rem;
+}
+.form input {
+  background: var(--clr-grey-10);
+  border-color: transparent;
+  border-radius: var(--radius);
+  padding: 0.25rem 0.5rem;
+  border: none;
+  outline: none;
+} 
+.form-control {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+.form button {
+  display: inline-block;
+  background: var(--clr-black);
+  color: var(--clr-white);
+  border-color: transparent;
+  margin-top: 1rem;
+  letter-spacing: var(--spacing);
+  padding: 0.15rem 0.25rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
