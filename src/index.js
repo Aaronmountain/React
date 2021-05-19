@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./pages/MemorizingHook/App.js";
+import App from "./pages/chatEngine/App.js";
 
 ReactDOM.render(
   <App />,
