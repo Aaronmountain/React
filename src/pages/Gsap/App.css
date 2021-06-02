@@ -1,0 +1,39 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg:#242526;
+  --border:1px solid #474a4d;
+  --speed:500ms;
+  --gradcolor: rgb(33, 154, 184);
+  --size: 1.5rem;
+}
+.wrap{
+  width: 100%;
+}
+.box{
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 15rem;
+}
+.line{
+  width: 0%;
+  margin: 0 auto;
+  height: 1rem;
+  background: var(--bg);
+}
+.wrap .box:last-child{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+svg{
+  color: var(--gradcolor);
+  width: calc(var(--size) * 5);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
