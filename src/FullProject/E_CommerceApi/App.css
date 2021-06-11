@@ -1,0 +1,14 @@
+.product_Detal_Wrap,
+.products_Wrap {
+  width: 50%;
+}
+
+@media screen and (max-width: 1180px) {
+  .flex-mw945-column {
+    flex-direction: column !important;
+  }
+  .product_Detal_Wrap,
+  .products_Wrap {
+    width: 100%;
+  }
+}

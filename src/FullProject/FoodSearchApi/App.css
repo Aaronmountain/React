@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/* common */
+.pt-2 {
+  padding-top: 1rem;
+}
+.py-1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+/* -------- */
+.formwrap {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+}
+.formwrap form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formwrap .form-search {
+  width: 60%;
+  border-color: cornflowerblue;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+.formwrap .form-search:focus {
+  border: 2px solid cornflowerblue;
+  outline: none;
+}
+.btn {
+  border: 2px solid cornflowerblue;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-left: 0.5rem;
+  color: #fff;
+  background: #bbc1bf;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  color: rgb(92, 92, 92);
+  background: transparent;
+  transform: scale(1.1);
+}
+.recipeCardWrap {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recipeCard {
+  margin: 3% 0;
+  padding: 1%;
+  flex-basis: 40%;
+  border: 1px solid rgb(87, 110, 117);
+  box-shadow: 0px 0px 2px 1px rgb(22, 114, 114);
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  color: rgb(85, 83, 83);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipeCard img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+.recipeCard li {
+  padding: 0.1rem 0;
+}

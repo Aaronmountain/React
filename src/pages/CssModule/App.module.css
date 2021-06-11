@@ -1,0 +1,27 @@
+:root {
+  --text-color: #40ec0c;
+}
+.h1 {
+  font-size: 9rem;
+  color: red;
+  text-align: center;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #262626;
+  padding: 1rem;
+}
+.article {
+  font-size: 0.5rem;
+  width: 50%;
+  margin: 0 1%;
+  color: var(--text-color);
+}
+.content {
+  /* composes: primary from './color.css';  className from 'folder' */
+  composes: article; /* compose CSS extends */
+  color: aqua;
+}
