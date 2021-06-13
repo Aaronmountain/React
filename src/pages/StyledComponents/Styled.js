@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, createGlobalStyle } from 'styled-components';
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.size.Title};
@@ -42,4 +42,21 @@ const rotate = keyframes`
 export const SubTitle = styled.div`
   color: ${({ theme }) => theme.color.primary};
   animation: ${rotate} 3s linear infinite;
+`;
+
+export const GlobalStyle = createGlobalStyle`
+  *,*::after,*::before{
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing:border-box;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  img{
+    max-width:100%;
+    object-fit: cover;
+  }
 `;
