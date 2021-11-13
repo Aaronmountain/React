@@ -1,0 +1,9 @@
+/* margin */
+.mr-1 {
+  margin-right: 1rem;
+}
+/* padding */
+.py-half {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
